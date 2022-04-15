@@ -14,7 +14,7 @@ function MuiTextfield() {
               <TextField label='Small Size Secondary Color' size='small' color='secondary' variant='standard' />
         </Stack>
         <Stack direction='row' spacing={2}>
-            <TextField label='Form Input' required error value={value} onChange={(e) => setValue(e.target.value)} error={!value} helperText={!value ? 'Required Password' : 'Verified' } />
+            <TextField label='Form Input' required value={value} onChange={(e) => setValue(e.target.value)} error={!value} helperText={!value ? 'Required Password' : 'Verified' } />
             <TextField label='Form Input' helperText='Enter Any Help Text To User' type='text' disabled />
             {/* <TextField label='read only' InputProps={{ readonly : true }} /> */}
         </Stack>
