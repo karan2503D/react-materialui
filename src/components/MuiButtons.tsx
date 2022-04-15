@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import SendIcon from '@mui/icons-material/Send';
 import FormatBoldIcon from '@mui/icons-material/FormatBold';
 import FormatItalicIcon from '@mui/icons-material/FormatItalic';
@@ -7,6 +7,10 @@ import { ToggleButtonGroup, ToggleButton,ButtonGroup, Button, IconButton, Stack 
 // TOGGLE BUTTON COMPONENT USE to group realated options
 
 function MuiButtons() {
+  const [formats, setFormats] = useState<string | null>(null)
+  const HandleFormatChange = (_event: React.MouseEvent<HTMLElement>, updatedFormats: string | null ) => {
+    setFormats(updatedFormats);
+  }
   return (
     <>
     <Stack spacing={4}>
@@ -53,10 +57,10 @@ function MuiButtons() {
         </ButtonGroup>
       </Stack>
       <Stack direction="row">
-        <ToggleButtonGroup aria-label='text formatting'>
-          <ToggleButton><FormatBoldIcon></FormatBoldIcon></ToggleButton>
-          <ToggleButton><FormatItalicIcon></FormatItalicIcon></ToggleButton>
-          <ToggleButton><FormatUnderlinedIcon></FormatUnderlinedIcon></ToggleButton>
+        <ToggleButtonGroup aria-label='text formatting' value={formats} onChange={HandleFormatChange} size='small' color='success' orientation='vertical' exclusive>
+          <ToggleButton value='bold'aria-label='bold'><FormatBoldIcon /></ToggleButton>
+          <ToggleButton value='italic' aria-label='italic'><FormatItalicIcon /></ToggleButton>
+          <ToggleButton value='underlined' aria-label='underlined'><FormatUnderlinedIcon /></ToggleButton>
         </ToggleButtonGroup>
       </Stack>
     </>
