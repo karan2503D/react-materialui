@@ -1,6 +1,10 @@
 import React from 'react';
 import SendIcon from '@mui/icons-material/Send';
-import { ButtonGroup, Button, IconButton, Stack } from '@mui/material'
+import FormatBoldIcon from '@mui/icons-material/FormatBold';
+import FormatItalicIcon from '@mui/icons-material/FormatItalic';
+import FormatUnderlinedIcon from '@mui/icons-material/FormatUnderlined';
+import { ToggleButtonGroup, ToggleButton,ButtonGroup, Button, IconButton, Stack } from '@mui/material'
+// TOGGLE BUTTON COMPONENT USE to group realated options
 
 function MuiButtons() {
   return (
@@ -47,6 +51,13 @@ function MuiButtons() {
           <Button>Center</Button>
           <Button>Right</Button>
         </ButtonGroup>
+      </Stack>
+      <Stack direction="row">
+        <ToggleButtonGroup aria-label='text formatting'>
+          <ToggleButton><FormatBoldIcon></FormatBoldIcon></ToggleButton>
+          <ToggleButton><FormatItalicIcon></FormatItalicIcon></ToggleButton>
+          <ToggleButton><FormatUnderlinedIcon></FormatUnderlinedIcon></ToggleButton>
+        </ToggleButtonGroup>
       </Stack>
     </>
   )
