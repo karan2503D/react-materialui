@@ -1,5 +1,5 @@
 import React from 'react'
-import { Grid,Box, Stack, Divider } from '@mui/material' ;
+import { Grid,Box, Stack, Divider, Paper } from '@mui/material' ;
 
 function MuiLayout() {
   return (
@@ -7,7 +7,7 @@ function MuiLayout() {
     // GRID COMPONENT IS USEFUL FOR 2 DIMENSIONAL AND RESPONSIVE LAYOUT
     // SPAN WILL CONVERT IT INTO SPAN TAG
     // SPACING IN MULTIPLED BY 8 
-    <>
+    <Paper sx={{ padding: '32px' }} elevation={4}>
       <Stack sx={{ border: '1px solid' }} direction='row' spacing={2} divider={<Divider orientation='vertical' flexItem />}>
           <Box component='span' sx={{
               backgroundColor: 'primary.main',
@@ -28,7 +28,7 @@ function MuiLayout() {
 
       </Stack>
       {/* GRID HAS 2 COMPONENTS 1 FOR PARENT AND 1 FOR CHILD */}
-      <Grid container rowSpacing={2} colsSpacing={2}>
+      <Grid container spacing={2}>
            <Grid item xs='auto' sm={6}>
                <Box bgcolor='primary.light' p={2}>1</Box>
            </Grid>
@@ -45,7 +45,7 @@ function MuiLayout() {
                   <Box bgcolor='primary.light' p={2}>5</Box>
            </Grid>
       </Grid>
-      </>
+      </Paper>
   )
 }
 
