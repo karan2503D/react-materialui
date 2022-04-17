@@ -1,4 +1,5 @@
 import './App.css';
+import MuiAccordion from './components/MuiAccordion';
 import MuiAutocomplete from './components/MuiAutocomplete';
 import MuiButtons from './components/MuiButtons';
 import MuiCard from './components/MuiCard';
@@ -25,6 +26,7 @@ function App() {
       <MuiAutocomplete />
       <MuiLayout />
       <MuiCard />
+      <MuiAccordion />
     </div>
   );
 }
