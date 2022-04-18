@@ -17,6 +17,7 @@ import MuiSpeedDail from './components/MuiSpeedDail';
 import MuiSwitch from './components/MuiSwitch';
 import MuiTextfield from './components/MuiTextField';
 import { MuiTypography } from './components/MuiTypography';
+import MuiAvatar from './MuiAvatar';
 import MuiBottomNavigation from './MuiBottomNavigation';
 
 function App() {
@@ -41,6 +42,7 @@ function App() {
       <MuiDrawer />
       <MuiSpeedDail />
       <MuiBottomNavigation />
+      <MuiAvatar />
     </div>
   );
 }
