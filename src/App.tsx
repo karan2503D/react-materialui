@@ -5,6 +5,7 @@ import MuiBreadcrumb from './components/MuiBreadcrumb';
 import MuiButtons from './components/MuiButtons';
 import MuiCard from './components/MuiCard';
 import MuiCheckBox from './components/MuiCheckBox';
+import MuiDrawer from './components/MuiDrawer';
 import MuiImagelist from './components/MuiImagelist';
 import MuiLayout from './components/MuiLayout';
 import MuiLink from './components/MuiLink';
@@ -12,6 +13,7 @@ import MuiNavbar from './components/MuiNavbar';
 import MuiRadioButton from './components/MuiRadioButton';
 import MuiRating from './components/MuiRating';
 import MuiSelect from './components/MuiSelect';
+import MuiSpeedDail from './components/MuiSpeedDail';
 import MuiSwitch from './components/MuiSwitch';
 import MuiTextfield from './components/MuiTextField';
 import { MuiTypography } from './components/MuiTypography';
@@ -35,6 +37,8 @@ function App() {
       <MuiNavbar />
       <MuiLink /> 
       <MuiBreadcrumb />
+      <MuiDrawer />
+      <MuiSpeedDail />
     </div>
   );
 }
