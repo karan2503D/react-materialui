@@ -5,6 +5,7 @@ import MuiBreadcrumb from './components/MuiBreadcrumb';
 import MuiButtons from './components/MuiButtons';
 import MuiCard from './components/MuiCard';
 import MuiCheckBox from './components/MuiCheckBox';
+import MuiChip from './components/MuiChip';
 import MuiDrawer from './components/MuiDrawer';
 import MuiImagelist from './components/MuiImagelist';
 import MuiLayout from './components/MuiLayout';
@@ -47,6 +48,7 @@ function App() {
       <MuiAvatar />
       <MuiBadge />
       <MuiList />
+      <MuiChip />
     </div>
   );
 }
