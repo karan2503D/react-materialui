@@ -20,6 +20,7 @@ import { MuiTypography } from './components/MuiTypography';
 import MuiAvatar from './MuiAvatar';
 import MuiBadge from './MuiBadge';
 import MuiBottomNavigation from './MuiBottomNavigation';
+import MuiList from './MuiList';
 
 function App() {
   return (
@@ -45,6 +46,7 @@ function App() {
       <MuiBottomNavigation />
       <MuiAvatar />
       <MuiBadge />
+      <MuiList />
     </div>
   );
 }
