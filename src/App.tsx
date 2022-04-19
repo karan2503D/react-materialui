@@ -17,6 +17,7 @@ import MuiSelect from './components/MuiSelect';
 import MuiSpeedDail from './components/MuiSpeedDail';
 import MuiSwitch from './components/MuiSwitch';
 import MuiTextfield from './components/MuiTextField';
+import MuiTooltip from './components/MuiTooltip';
 import { MuiTypography } from './components/MuiTypography';
 import MuiAvatar from './MuiAvatar';
 import MuiBadge from './MuiBadge';
@@ -30,7 +31,7 @@ function App() {
       <MuiButtons />
       <MuiTextfield />
       <MuiSelect />
-      <MuiRadioButton/>
+      <MuiRadioButton />
       <MuiCheckBox />
       <MuiSwitch />
       <MuiRating />
@@ -40,7 +41,7 @@ function App() {
       <MuiAccordion />
       <MuiImagelist />
       <MuiNavbar />
-      <MuiLink /> 
+      <MuiLink />
       <MuiBreadcrumb />
       <MuiDrawer />
       <MuiSpeedDail />
@@ -49,6 +50,7 @@ function App() {
       <MuiBadge />
       <MuiList />
       <MuiChip />
+      <MuiTooltip />
     </div>
   );
 }
