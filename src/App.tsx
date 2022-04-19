@@ -16,6 +16,7 @@ import MuiRating from './components/MuiRating';
 import MuiSelect from './components/MuiSelect';
 import MuiSpeedDail from './components/MuiSpeedDail';
 import MuiSwitch from './components/MuiSwitch';
+import MuiTable from './components/MuiTable';
 import MuiTextfield from './components/MuiTextField';
 import MuiTooltip from './components/MuiTooltip';
 import { MuiTypography } from './components/MuiTypography';
@@ -51,6 +52,7 @@ function App() {
       <MuiList />
       <MuiChip />
       <MuiTooltip />
+      <MuiTable />
     </div>
   );
 }
