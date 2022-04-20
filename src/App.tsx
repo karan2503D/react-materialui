@@ -33,6 +33,9 @@ import MuiList from './MuiList';
 import { LocalizationProvider } from '@mui/lab'
 import AdapterDateFns from'@mui/lab/AdapterDateFns'
 import MuiDateRange from './components/MuiDateRange';
+import AppBar from '@mui/material/AppBar'
+import Tabs from '@mui/material/Tabs'
+import MuiTabs from './components/MuiTabs';
 
 function App() {
   return (
@@ -70,6 +73,7 @@ function App() {
         <MuiSkeleton />
         <MuiLoadingbutton />
         <MuiDateRange />
+        <MuiTabs />
       </div>
     </LocalizationProvider>
   );
