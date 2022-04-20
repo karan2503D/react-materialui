@@ -17,6 +17,7 @@ import MuiProgress from './components/MuiProgress';
 import MuiRadioButton from './components/MuiRadioButton';
 import MuiRating from './components/MuiRating';
 import MuiSelect from './components/MuiSelect';
+import MuiSkeleton from './components/MuiSkeleton';
 import MuiSnackbar from './components/MuiSnackbar';
 import MuiSpeedDail from './components/MuiSpeedDail';
 import MuiSwitch from './components/MuiSwitch';
@@ -61,6 +62,7 @@ function App() {
       <MuiSnackbar />
       <MuiDialog />
       <MuiProgress />
+      <MuiSkeleton />
     </div>
   );
 }
