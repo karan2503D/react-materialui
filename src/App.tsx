@@ -37,6 +37,7 @@ import AppBar from '@mui/material/AppBar'
 import Tabs from '@mui/material/Tabs'
 import MuiTabs from './components/MuiTabs';
 import MuiTimeline from './components/MuiTimeline';
+import MuiMasonry from './components/MuiMasonry';
 
 function App() {
   return (
@@ -76,6 +77,7 @@ function App() {
         <MuiDateRange />
         <MuiTabs />
         <MuiTimeline />
+        <MuiMasonry />
       </div>
     </LocalizationProvider>
   );
