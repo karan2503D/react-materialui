@@ -32,6 +32,7 @@ import MuiBottomNavigation from './MuiBottomNavigation';
 import MuiList from './MuiList';
 import { LocalizationProvider } from '@mui/lab'
 import AdapterDateFns from'@mui/lab/AdapterDateFns'
+import MuiDateRange from './components/MuiDateRange';
 
 function App() {
   return (
@@ -68,6 +69,7 @@ function App() {
         <MuiProgress />
         <MuiSkeleton />
         <MuiLoadingbutton />
+        <MuiDateRange />
       </div>
     </LocalizationProvider>
   );
