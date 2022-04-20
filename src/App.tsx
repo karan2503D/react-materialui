@@ -30,42 +30,46 @@ import MuiAvatar from './MuiAvatar';
 import MuiBadge from './MuiBadge';
 import MuiBottomNavigation from './MuiBottomNavigation';
 import MuiList from './MuiList';
+import { LocalizationProvider } from '@mui/lab'
+import AdapterDateFns from'@mui/lab/AdapterDateFns'
 
 function App() {
   return (
-    <div className="App">
-      <MuiTypography />
-      <MuiButtons />
-      <MuiTextfield />
-      <MuiSelect />
-      <MuiRadioButton />
-      <MuiCheckBox />
-      <MuiSwitch />
-      <MuiRating />
-      <MuiAutocomplete />
-      <MuiLayout />
-      <MuiCard />
-      <MuiAccordion />
-      <MuiImagelist />
-      <MuiNavbar />
-      <MuiLink />
-      <MuiBreadcrumb />
-      <MuiDrawer />
-      <MuiSpeedDail />
-      <MuiBottomNavigation />
-      <MuiAvatar />
-      <MuiBadge />
-      <MuiList />
-      <MuiChip />
-      <MuiTooltip />
-      <MuiTable />
-      <MuiAlert />
-      <MuiSnackbar />
-      <MuiDialog />
-      <MuiProgress />
-      <MuiSkeleton />
-      <MuiLoadingbutton />
-    </div>
+    <LocalizationProvider dateAdapter={AdapterDateFns}>
+      <div className="App">
+        <MuiTypography />
+        <MuiButtons />
+        <MuiTextfield />
+        <MuiSelect />
+        <MuiRadioButton />
+        <MuiCheckBox />
+        <MuiSwitch />
+        <MuiRating />
+        <MuiAutocomplete />
+        <MuiLayout />
+        <MuiCard />
+        <MuiAccordion />
+        <MuiImagelist />
+        <MuiNavbar />
+        <MuiLink />
+        <MuiBreadcrumb />
+        <MuiDrawer />
+        <MuiSpeedDail />
+        <MuiBottomNavigation />
+        <MuiAvatar />
+        <MuiBadge />
+        <MuiList />
+        <MuiChip />
+        <MuiTooltip />
+        <MuiTable />
+        <MuiAlert />
+        <MuiSnackbar />
+        <MuiDialog />
+        <MuiProgress />
+        <MuiSkeleton />
+        <MuiLoadingbutton />
+      </div>
+    </LocalizationProvider>
   );
 }
 
